@@ -1,0 +1,30 @@
+{
+  "name": "nestjs-event-catch-error",
+  "description": "A NestJS decorator that catches errors from event emitter and emits them to your custom error event",
+  "author": {
+    "name": "Bracaval Elias",
+    "email": "bracaval.elias.pro@gmail.com",
+    "url": "https://github.com/yatoogamii"
+  },
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "@nestjs/common": "^10.0.0",
+    "reflect-metadata": "^0.2.0",
+    "@nestjs/event-emitter": "^2.1.1"
+  },
+  "devDependencies": {
+    "@nestjs/common": "^10.0.0",
+    "typescript": "^5.7.3",
+    "reflect-metadata": "^0.2.0",
+    "@nestjs/event-emitter": "^2.1.1"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  }
+}
